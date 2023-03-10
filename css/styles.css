@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: tomato;
+  font-size: 20px;
+}
+
+fieldset {
+  width: 200px;
+  margin: 0 auto;
+  border-color: bisque;
+}
+
+#name,
+#email,
+#phone,
+#password {
+  padding: 1em 0.5rem;
+  border: none;
+  font-size: 16px;
+}
+
+#submit {
+  padding: 1rem;
+  background-color: bisque;
+  border: none;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  margin: 1rem 0 1rem 0;
+}
