@@ -9,9 +9,9 @@
   </head>
   <body>
     <!-- ////////////////////////////////////////
-           ////////////DESIGNED BY OMOTAYO////////////////////////
+           ////////////DEVELOPED BY OMOTAYO////////////////////////
                  ////////////////////////////////////////////////////////// -->
-    <form action="action-page.php" method="post">
+    <form onsubmit="yourfunctionname()">
       <fieldset>
         <legend><h2>Week1 Task</h2></legend>
         <label for="name"><b>Name:</b></label
@@ -22,6 +22,7 @@
           id="name"
           name="name"
           placeholder="Enter your name..."
+          required
         /><br />
 
         <label for="email"><b>Email address:</b></label
@@ -32,6 +33,7 @@
           placeholder="example@yahoo.com"
           id="email"
           name="email"
+          required
         /><br />
 
         <label for="phone"><b>Phone number:</b></label
@@ -42,16 +44,18 @@
           id="phone"
           name="phone"
           placeholder="+234-000-0000-000"
+          required
         /><br /><br />
 
         <label for="male"><b>Male:</b></label>
-        <input type="radio" value="male" id="male" name="gender" />
+        <input type="radio" value="male" id="male" name="gender" required />
         <label for="female"><b>Female:</b></label>
         <input
           type="radio"
           value="female"
           id="female"
           name="gender"
+          required
         /><br /><br />
 
         <label for="password"><b>Password:</b></label
@@ -62,14 +66,19 @@
           id="password"
           name="password"
           placeholder="password"
+          required
         /><br />
 
-        <input type="submit" value="submit" id="submit" name="submit" />
+        <input type="submit" value="submit" id="submit" />
       </fieldset>
     </form>
 
     <script>
       alert("You're welcome to check Omotayo's week one task.");
+
+      function yourfunctionname() {
+        alert("Sucessfully submitted");
+      }
     </script>
   </body>
 </html>
